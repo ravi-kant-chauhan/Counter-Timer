@@ -25,5 +25,13 @@ const timerFunction = () => {
     if (now>targetDate)
         targetDate = `${enteredMonth}/${enteredDay}/${yyyy + 1}`;
     
-    , 0);
+    const intervalId = setInterval(() => {
+        const timer  = new Date(targetDate).getTime();
+
+        const today = new Date().getTime();
+
+        const difference = timer - today;
+
+        
+    }, 0);
 };
