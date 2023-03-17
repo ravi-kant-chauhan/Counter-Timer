@@ -42,6 +42,10 @@ const timerFunction = () => {
         minutesElement.innerText = leftMinute;
         secondsElement.innerText = leftSecond;
 
-        
+        if (difference < 0) {
+            counterTimer.style.display = "none";
+            heading.innerText = "Time's Up";
+            clearInterval(intervalId);
+        }
     }, 0);
 };
