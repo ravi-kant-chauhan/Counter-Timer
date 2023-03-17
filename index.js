@@ -18,6 +18,12 @@ const timerFunction = () => {
 
     now = `${mm}/${dd}/${yyyy}`;
 
+    const enteredDay = prompt("Enter Day").padStart(2, "0");
+    const enteredMonth = prompt("Enter Month").padStart(2, "0");
+    let targetDate = `${enteredMonth}/${enteredDay}/${yyyy}`;
+
+    if (now>targetDate)
+        targetDate = `${enteredMonth}/${enteredDay}/${yyyy + 1}`;
     
-    }, 0);
+    , 0);
 };
