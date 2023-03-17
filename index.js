@@ -9,3 +9,15 @@ const second = 1000,
     minute = 60 * second, 
     hour = 60 * minute,
     day = 24 * hour;
+
+const timerFunction = () => {
+    let now = new Date(),
+        dd = String(now.getDate()).padStart(2, "0"),
+        mm = String(now.getMonth() + 1).padStart(2, "0"),
+        yyyy = now.getFullYear();
+
+    now = `${mm}/${dd}/${yyyy}`;
+
+    
+    }, 0);
+};
