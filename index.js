@@ -49,3 +49,5 @@ const timerFunction = () => {
         }
     }, 0);
 };
+
+timerFunction();
