@@ -32,6 +32,16 @@ const timerFunction = () => {
 
         const difference = timer - today;
 
+        const leftDay = Math.floor(difference / day);
+        const leftHour = Math.floor((difference % day) / hour);
+        const leftMinute = Math.floor((difference % hour) / minute);
+        const leftSecond = Math.floor((difference % minute) / second);
+
+        daysElement.innerHTML = leftDay;
+        hoursElement.innerText = leftHour;
+        minutesElement.innerText = leftMinute;
+        secondsElement.innerText = leftSecond;
+
         
     }, 0);
 };
